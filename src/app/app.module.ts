@@ -1,18 +1,20 @@
-import { RouterModule,Routes } from '@angular/router';
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
- 
+
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { FooterComponent } from './footer/footer.component';
 import { FulllayoutComponent } from './layout/fulllayout/fulllayout.component';
-import { SidebarLayoutComponent } from './layout/sidebar-layout/sidebar-layout.component';
-import { AppRoutingModule } from './/app-routing.module';
 import { GalleryComponent } from './gallery/gallery.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { NgModule } from '@angular/core';
+import { RouterModule,Routes } from '@angular/router';
+import { SidebarLayoutComponent } from './layout/sidebar-layout/sidebar-layout.component';
 
-import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { SafePipe } from './safe.pipe';
 
 @NgModule({
@@ -28,7 +30,9 @@ import { SafePipe } from './safe.pipe';
   ],
   imports: [
     BrowserModule,
+    CollapseModule.forRoot(),
     CarouselModule.forRoot(),
+    BsDropdownModule.forRoot(),
     AppRoutingModule
   ],
   providers: [],
