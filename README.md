@@ -44,9 +44,15 @@ $ ng build --prod --base-href="https://YOURUSERNAME.github.io/REPO-NAME/"
 Next, run these commands to setup our project folder push to the new repo:
 
 $ git add .
+
 $ git commit -m "first commit"
+
 $ git remote add origin git@github.com:yourinfo/yourgit.git
+
 $ git push -u origin master
+
+
+
 Then, finally, we can use the Github-pages CLI to push our project to github-pages:
 
 $ angular-cli-ghpages
