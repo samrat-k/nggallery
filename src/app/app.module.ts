@@ -16,7 +16,9 @@ import { SidebarLayoutComponent } from './layout/sidebar-layout/sidebar-layout.c
 import { SafePipe } from './safe.pipe';
 import { ValidationComponent } from './validation/validation.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
- 
+import { HttpModule } from '@angular/http';
+//import { SlidsService } from './slids.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +39,9 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     BsDropdownModule.forRoot(),
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,6 +6,7 @@
 <div class="container">
   <div class="col-sm-1"></div>
   <div class="col-sm-10">
+  
   <carousel>
     <slide *ngFor="let slide of slides" >
       <img src="{{slide.image}}" alt="First slide" style="display: block; width: 100%; width: 100%;">
@@ -17,6 +18,17 @@
   </carousel>
   </div>
 <div class="col-sm-1"></div>
+<div class="col-sm-10">
+    <h1>Json Response Via Service Call: </h1>
+    <br>  {{slides|json}}
+   
+    <br>
+   
+    <br>
+<br>
+   
+</div>
+ 
 </div>
 <br>
 <br>
