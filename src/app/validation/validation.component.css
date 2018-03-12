@@ -1,0 +1,12 @@
+select.ng-valid,input.ng-valid:not(form)  {
+    border: 1px solid #42A948;
+    border-left: 5px solid #42A948; /* green */
+  }
+  
+  select.ng-invalid, input.ng-invalid:not(form)  {
+    border: 1px solid #a94442;
+    border-left: 5px solid #a94442;  
+  }
+  select.ng-untouched,input.ng-untouched{
+    border:1px solid #ccc!important;
+  }

@@ -1,5 +1,3 @@
-
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,7 +14,9 @@ import { RouterModule,Routes } from '@angular/router';
 import { SidebarLayoutComponent } from './layout/sidebar-layout/sidebar-layout.component';
 
 import { SafePipe } from './safe.pipe';
-
+import { ValidationComponent } from './validation/validation.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,14 +26,18 @@ import { SafePipe } from './safe.pipe';
     FulllayoutComponent,
     SidebarLayoutComponent,
     GalleryComponent,
-    SafePipe
+    SafePipe,
+    ValidationComponent
+    
   ],
   imports: [
     BrowserModule,
     CollapseModule.forRoot(),
     CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
